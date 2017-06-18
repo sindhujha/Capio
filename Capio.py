@@ -68,5 +68,5 @@ def parse_json(response,file_path):
                 p.add_run(w['word']+" ").font.color.rgb = RGBColor(255,0,0)
             else:
                 p.add_run(w['word']+" ")
-    document.save((file_path))
+    document.save(str(file_path))
 
