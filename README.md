@@ -25,6 +25,8 @@ The above files are put in a directory and the following commands are run in tha
 --> docker run -d -p 5000:5000 <Image_name>
 --> Test the container by going to the address - "http://0.0.0.0/5000/" in your browser. If API response is succesful, the doc can be opened and checked in the location mentioned in config.json.
 The web server will output success message if the transcription is written successfully or it will output error message.
+To see the created file in container:
+The following command is used on a running container- "docker exec -it <container_name> bash" and the filesystem can be browsed and the output file can be viewed/copied to host.
 
 2.) Without Docker
 -->python app.py
