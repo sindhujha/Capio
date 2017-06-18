@@ -22,13 +22,13 @@ Steps to run:
 1.) Using Docker:
 The above files are put in a directory and the following commands are run in that directory.
 --> docker build -t <Image_name>:latest .
---> docker run -d -p <port_no>:<port_no> <Image_name>
---> Test the container by going to the address - "0.0.0.0/port_no". 
+--> docker run -d -p 5000:5000 <Image_name>
+--> Test the container by going to the address - "http://0.0.0.0/5000/" in your browser. If API response is succesful, the doc can be opened and checked in the location mentioned in config.json.
 The web server will output success message if the transcription is written successfully or it will output error message.
 
 2.) Without Docker
--->port Number has to be added manually inside the app.py
 -->python app.py
+--> Go to the address - "http://0.0.0.0/5000/" in your browser for the API response and if succesful, the doc can be opened and checked in the location mentioned in config.json.
 
 3.) For running test cases:
 python CapioTest.py
